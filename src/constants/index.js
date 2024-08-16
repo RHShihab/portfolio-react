@@ -47,12 +47,11 @@ export const PROJECTS = [
     description: `-	Develop an automated dispenser solution using ESP32 with WiFi-enabled transmission to the database using JSON via WebSocket and MQTT Protocols\n
 -	Fabricate contactless interaction utilizing student RFID cards
 `,
-    technologies: ["IoT", "Embedded Systems", "React", "Node.js", "Supabase"],
+    technologies: ["IoT", "ESP32", "React", "Node.js", "Supabase"],
   },
 ];
 
 export const CONTACT = {
   address: "Dhaka, Bangladesh",
-  // email: "rh.shihab@gmail.com",
   email: "shihab.hasan3322@gmail.com",
 };

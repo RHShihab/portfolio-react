@@ -2,12 +2,12 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className=" mb-20 flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center text-2xl font-bold text-slate-100">
+    <nav className=" mb-20 flex items-center justify-between lg:justify-center py-6 gap-16">
+      <div className="flex flex-shrink-0 items-center text-2xl font-bold text-slate-100 lg:w-1/2">
         {/* <img src={logo} alt="Logo" /> */}
         rhShihab
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+      <div className="m-8 flex items-center justify-end gap-4 text-2xl lg:w-80">
         <a href="https://www.linkedin.com/in/rhshihab/" target="_blank">
           <FaLinkedin />
         </a>

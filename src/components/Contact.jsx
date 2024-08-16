@@ -1,6 +1,6 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
@@ -38,6 +38,17 @@ const Contact = () => {
         </motion.p>
         <motion.p
           initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="my-4 flex justify-center items-center gap-2"
+        >
+          <FaGithub className="pt" />
+          <a href="https://github.com/RHShihab" className="border-b">
+            in/rhshihab/
+          </a>
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           className="my-4 flex justify-center items-center gap-2"

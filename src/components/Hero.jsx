@@ -1,6 +1,8 @@
-import { HERO_CONTENT } from "../constants"; 
+import { HERO_CONTENT } from "../constants";
 import profile from "../assets/profile.png";
 import { motion } from "framer-motion";
+
+import HeroCarousel from "./custom/HeroCarousel";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -46,14 +48,15 @@ const Hero = () => {
         <div className="max-w-md lg:w-1/2">
           <div className="flex justify-center">
             {/* <img src={profilePic} alt="Rahat Hasan Shihab" /> */}
-            <motion.img
+            {/* <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               className="rounded-3xl"
               src={profile}
               alt="Rahat Hasan Shihab"
-            />
+            /> */}
+            <HeroCarousel/>
             {/* <img
               className="rounded-3xl"
               src="https://via.placeholder.com/380x380"
