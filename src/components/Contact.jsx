@@ -1,20 +1,52 @@
 import { CONTACT } from "../constants";
+import { motion } from "framer-motion";
+import { FaLinkedin } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
     <div className="border-b border-neutral-800 pb-20">
-      <h2 className="my-20 text-center text-4xl">Get in Touch</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="my-20 text-center text-4xl"
+      >
+        Get in Touch
+      </motion.h2>
       <div className="text-center tracking-tighter">
-        <p className="my-4">{CONTACT.address}</p>
-        <p className="my-4">{CONTACT.phoneNo}</p>
-        <p className="my-4">
+        <motion.p
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="my-4 flex justify-center items-center gap-2"
+        >
+          <FaLocationDot />
+          {CONTACT.address}
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="my-4 flex justify-center items-center gap-2"
+        >
+          <FaLinkedin className="pt" />
           <a href="https://www.linkedin.com/in/rhshihab/" className="border-b">
             in/rhshihab/
           </a>
-        </p>
-        <a href={"mailto:" + CONTACT.email} className="border-b">
-          {CONTACT.email}
-        </a>
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="my-4 flex justify-center items-center gap-2"
+        >
+          <MdEmail />
+          <a href={"mailto:" + CONTACT.email} className="border-b">
+            {CONTACT.email}
+          </a>
+        </motion.p>
       </div>
     </div>
   );

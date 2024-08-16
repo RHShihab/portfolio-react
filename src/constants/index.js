@@ -51,7 +51,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Dhaka, Bangladesh",
-  phoneNo: "+880 1689-448838",
   // email: "rh.shihab@gmail.com",
   email: "shihab.hasan3322@gmail.com",
 };
