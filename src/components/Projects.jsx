@@ -19,7 +19,7 @@ const Projects = () => {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
+              className="w-full mr-6 lg:w-1/4"
             >
               <img
                 src={project.image}

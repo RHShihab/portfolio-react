@@ -1,5 +1,4 @@
-import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/rhShihabProfile2.png";
+import { HERO_CONTENT } from "../constants"; 
 import profile from "../assets/profile.png";
 import { motion } from "framer-motion";
 
