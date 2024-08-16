@@ -46,7 +46,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="max-w-md lg:w-1/2">
-          <div className="flex justify-center">
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
+            className="flex justify-center"
+          >
             {/* <img src={profilePic} alt="Rahat Hasan Shihab" /> */}
             {/* <motion.img
               initial={{ x: 100, opacity: 0 }}
@@ -56,12 +61,12 @@ const Hero = () => {
               src={profile}
               alt="Rahat Hasan Shihab"
             /> */}
-            <HeroCarousel/>
+            <HeroCarousel />
             {/* <img
               className="rounded-3xl"
               src="https://via.placeholder.com/380x380"
             /> */}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
