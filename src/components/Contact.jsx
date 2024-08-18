@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import CustomSection from "./custom/CustomSection";
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-800 pb-20">
+    <CustomSection>
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +60,7 @@ const Contact = () => {
           </a>
         </motion.p>
       </div>
-    </div>
+    </CustomSection>
   );
 };
 

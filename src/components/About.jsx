@@ -2,10 +2,11 @@ import aboutImg from "../assets/profile.png";
 import profile from "../assets/profile.png";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
+import CustomSection from "./custom/CustomSection";
 
 const About = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <CustomSection>
       <h2 className="my-20 text-center text-4xl">About Me</h2>
       <div className="flex flex-wrap justify-center lg:px-20">
         <motion.div
@@ -36,7 +37,7 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </CustomSection>
   );
 };
 

@@ -51,6 +51,24 @@ export const PROJECTS = [
   },
 ];
 
+export const PUBLICATIONS = [
+  {
+    title:
+      "Rahman, M. H., Al Monir, M. F., Shihab, R. H., Ahammed, F. I., Uddin, M. F., Hasan, M., Islam, R., & Alam, S. B. (2023). Synergistic Design and Analysis of a Multi-Tasking Robot Enabling Artificial Intelligence for Hazard Response. In 2023 23rd International Conference on Control, Automation and Systems (ICCAS). Yeosu-si, Sounth Korea.",
+    doi: `https://doi.org/10.23919/iccas59377.2023.10316812`,
+  },
+  {
+    title:
+      "Saha, S. S., Chowdhury, H. A., Shihab, R. H., Ahammed, F. I., & Bhuiyan, A. M. (2021). Bioforge PTL: An IoT Enabled Rapidly Deployable Phototherapy Device for Neonatal Jaundice. In 2021 13th Biomedical Engineering International Conference (BMEiCON). Ayutthaya, Thailand.",
+    doi: `https://doi.org/10.1109/bmeicon53485.2021.9745205`,
+  },
+  {
+    title:
+      "Haque, S. R., Saha, S. S., Chowdhury, H. A., Ferdous, T. R., Chowdhury, A. S., Shihab, R. H., Choudhury, J. N., Choudhury, D. A. F. K., & Rahman, T. (2021). A Cost-Effective Solution for Real Time Remote Monitoring of Vital Signs in Patients. In 2021 14th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI). Shanghai, China.",
+    doi: `https://doi.org/10.1109/cisp-bmei53629.2021.9624436`,
+  },
+];
+
 export const CONTACT = {
   address: "Dhaka, Bangladesh",
   email: "shihab.hasan3322@gmail.com",

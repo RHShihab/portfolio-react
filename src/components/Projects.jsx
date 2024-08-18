@@ -1,9 +1,10 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import CustomSection from "./custom/CustomSection";
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <CustomSection>
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +60,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </CustomSection>
   );
 };
 

@@ -3,6 +3,7 @@ import profile from "../assets/profile.png";
 import { motion } from "framer-motion";
 
 import HeroCarousel from "./custom/HeroCarousel";
+import CustomSection from "./custom/CustomSection";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -15,7 +16,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-24 lg:mb-35">
+    <CustomSection>
       <div className="flex flex-wrap justify-center">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -39,37 +40,24 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 max-w-xl py-6"
             >
               {HERO_CONTENT}
             </motion.p>
           </div>
         </div>
-        <div className="max-w-md lg:w-1/2">
+        <div className="w-full lg:w-1/2">
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
             className="flex justify-center"
           >
-            {/* <img src={profilePic} alt="Rahat Hasan Shihab" /> */}
-            {/* <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-              className="rounded-3xl"
-              src={profile}
-              alt="Rahat Hasan Shihab"
-            /> */}
             <HeroCarousel />
-            {/* <img
-              className="rounded-3xl"
-              src="https://via.placeholder.com/380x380"
-            /> */}
           </motion.div>
         </div>
       </div>
-    </div>
+    </CustomSection>
   );
 };
 
