@@ -4,6 +4,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { SiArduino } from "react-icons/si";
 import { FiFigma } from "react-icons/fi";
 import figmaIcon from "../assets/icons/figma-icon.png";
+import fusion360 from "../assets/icons/fusion360-icon.png";
 import { motion } from "framer-motion";
 import CustomSection from "./custom/CustomSection";
 
@@ -77,6 +78,15 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiArduino className="text-7xl text-teal-600" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          {/* <FiFigma className="text-7xl" /> */}
+          <img className="w-14 my-2 mx-2" src={fusion360} />
         </motion.div>
       </motion.div>
     </CustomSection>
