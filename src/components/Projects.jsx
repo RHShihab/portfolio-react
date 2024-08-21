@@ -37,10 +37,8 @@ const Projects = () => {
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">
-                {project.title} -{" "}
-                <span className="text-sm text-purple-100">
-                  {project.subTitle}
-                </span>
+                {project.title} {project.subTitle && ` - `}{" "}
+                <span>{project.subTitle}</span>
               </h6>
               {/* <p className="mb-4 text-neutral-400">{project.description}</p> */}
               {project.description.split("\n").map((line, index) => (
